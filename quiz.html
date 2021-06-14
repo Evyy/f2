@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Quiz">
+  <title>The Best Quiz</title>
+	<script src="quiz.js"></script>
+	<link rel="stylesheet" type="text/css" href="quiz.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="fav/favicon1.ico" rel="shortcut icon" type="image/png" />
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+  <meta name="theme-color" content="black" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body onload="loadQuestion()">
+<header class="mainHeader">
+		<nav><ul>
+			<li><a href="index.html">BitCoin Conversion</a></li>
+			<li><a href="info.html">BitCoin Information</a></li>
+			<li class="active"><a href="quiz.html">BitCoin Quiz</a></li>
+			<li><a href="calc1.html">Calculator</a></li>
+		</ul></nav>
+    </header>
+<div id= "lightbox" onclick="closeLightBox()">
+  <div id="message"></div>
+  <p><a href="quiz.html">Want to restart? Click this button</a></p>
+</div>
+
+<h1>BitCoin Quiz</h1>
+<b>Click on the answer you think is right!<br> Go quick, for once the timer elapses the page will restart saving no progress :(<br>
+If you want to reset click the button at the bottom</b>
+
+<div class="grid-container">
+  <div class="header">
+    <div id="question">The Question</div>
+  </div>
+</div>
+  
+  <div class="left">
+    <div>
+     <div class="options" id="a" onclick="markIt('a')">A.</div>
+	 <div class="options" id="b" onclick="markIt('b')">B.</div>
+     <div class="options" id="c" onclick="markIt('c')">C.</div>
+	 <div class="options" id="d" onclick="markIt('d')">D.</div>
+  	</div>
+  </div> 
+  
+  <div class="right"><img id="image" src="images" alt=""></div>
+  
+  <div class="footer1">
+    Score <span id="score"></span>
+  </div>
+  
+  <div class="footer2">
+    <div id= "countdown"></div><br>
+    <input class="button" value="To restart click here" onclick="document.location.reload(true)">
+  </div>
+
+</body>
+</html>

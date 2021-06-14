@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="fav/favicon1.ico" rel="shortcut icon" type="image/png" />
+        <title>Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="calc1.js"></script>
+      <link href="calc1.css" rel="stylesheet">
+        <link rel="apple-touch-icon" href="icons/icon-192x192.png">
+      <meta name="description" content="calc">
+      <meta name="theme-color" content="black" />
+	  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <header class="mainHeader">
+		<nav><ul>
+			<li><a href="index.html"> BitCoin Conversion </a></li>
+			<li><a href="info.html"> BitCoin Information </a></li>
+			<li><a href="quiz.html"> BitCoin Quiz </a></li>
+			<li  class="active"><a href="calc1.html"> Calculator </a></li>
+		</ul></nav>
+    </header>
+	<br>
+	<h1>Convert</h1>
+        <input type="text" id="n1"/> BitCoin(s)<br><br>
+		<div id="operator">To</div>
+        <select id="n2"></select><br><br>
+        <button onclick="calc();">=</button><br><br>
+        <div id="message"></div>
+    </body>
+</html>
